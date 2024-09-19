@@ -4,8 +4,8 @@ void setup() {
 }
   
 void draw() {
-    for (int y = 0; y <1500; y = y + 100) {
-    for (int x = 0; x < 1500; x +=100) {
+    for (int y = 0; y <1500; y = y + 50) {
+    for (int x = 0; x < 1500; x +=50) {
       scale(x, y);
     }
   }
@@ -13,11 +13,11 @@ void draw() {
 
 void scale(int x, int y) {
   randomColor();
-  rect(x,y, 100, 100);
+  rect(x,y, 50, 50);
   randomColor();
-  triangle(x + 50,y, x, y + 100, x + 100, y + 100);
+  triangle(x +25,y, x, y + 50, x + 50, y + 50);
  randomColor();
-  triangle(x + 50, y + 100, x, y, x + 100, y);
+  triangle(x + 25, y + 50, x, y, x + 50, y);
 
   }
  
